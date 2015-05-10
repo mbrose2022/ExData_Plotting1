@@ -1,3 +1,5 @@
+source("loaddata.R")
+
 png("plot3.png", width = 480, height = 480, bg="white")
 plot(power$Time, power$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(power$Time, power$Sub_metering_2, col="red")

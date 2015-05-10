@@ -1,3 +1,5 @@
+source("loaddata.R")
+
 png("plot4.png", width = 480, height = 480, bg = "white")
 
 par(mfrow=c(2,2))
