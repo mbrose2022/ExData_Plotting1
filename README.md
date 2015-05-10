@@ -1,6 +1,7 @@
 ## Code for loading and subsetting data set
 
-```require(lubridate)
+```
+require(lubridate)
 
 power <- read.table('household_power_consumption.txt', header=TRUE,
   sep=';', na.strings='?',
@@ -15,4 +16,5 @@ power<-power[month(power$Date) == 2, ]
 feb1<-power[day(power$Date) == 1, ]
 feb2<-power[day(power$Date) == 2, ]
 power <- rbind(feb1, feb2)
-rm(feb1, feb2)```
+rm(feb1, feb2)
+```
